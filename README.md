@@ -15,7 +15,7 @@ Ensure the following tools are installed on your system:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/flask-mongodb-k8s.git
+git clone https://github.com/Yasin-Siddiquee/Flask-MongoDB_Kubernetes-deployment.git
 cd flask-mongodb-k8s
 ```
 
