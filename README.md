@@ -12,52 +12,12 @@ Ensure the following tools are installed on your system:
 
 ## Local Setup
 
-### 1. Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/Yasin-Siddiquee/Flask-MongoDB_Kubernetes-deployment.git
 cd flask-mongodb-k8s
 ```
-
-### 2. Set Up Virtual Environment
-
-```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-### 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run MongoDB Using Docker
-
-```bash
-docker run -d -p 27017:27017 --name mongodb mongo:latest
-```
-
-### 5. Run the Flask Application
-
-```bash
-export FLASK_APP=app.py
-export FLASK_ENV=development
-flask run
-```
-
-
-## Dockerization
-
-### 1. Build and Push the Docker Image  
-Build the Docker image for the Flask application and push it to Docker Hub.
-
-```bash
-docker build -t your-dockerhub-username/flask-mongodb-app:latest .
-docker push your-dockerhub-username/flask-mongodb-app:latest
-```
-Replace your-dockerhub-username with your Docker Hub username.
-
 
 ## Kubernetes Deployment
 
